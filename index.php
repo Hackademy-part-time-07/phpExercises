@@ -31,7 +31,9 @@ var_dump($varArraySecondElement);
 //3. Crear un array de arrays e imprimir un elemento del array.
 
 $array_arrays = [[0, 1, 2],[3, 4, 5],[6, 7, 8],[9, 10, 11]];
+
 var_dump ($array_arrays[1]);
+
 var_dump ($array_arrays[1][1]);
 
 
