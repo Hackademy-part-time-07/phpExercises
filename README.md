@@ -1,0 +1,2 @@
+# phpExercises
+ejercicios prácticos PHP
