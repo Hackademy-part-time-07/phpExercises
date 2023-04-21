@@ -79,7 +79,22 @@ function cincoNumerosRandom() {
 //8. Crear una función que imprima X valores random en el
 intervarlo //0 - X. (FALTA)
 
+function obtenerNumerosAleatorios($maximo) {
+  $numeros = array();
+  while (count($numeros) < 5) {
+      $numero_aleatorio = rand(1, $maximo);
+      if (!in_array($numero_aleatorio, $numeros)) {
+          $numeros[] = $numero_aleatorio;
+      }
+  }
+  return $numeros;
+}
+
+$numeros_aleatorios = obtenerNumerosAleatorios(25);
+var_dump($numeros_aleatorios);
+
 //9. Crear una función que dado un número devuelva solo los valores pares.//.
+$numero = 0;
 function obtenerPares($numero) {
     $pares = array();
     for ($i = 1; $i <= $numero; $i++) {
@@ -94,7 +109,18 @@ $misPares = obtenerPares(102);
 var_dump($misPares);
 
 //10. Crear una función que dado un número x imprima solo los valores impares.
-
+$numero = 0;
+function obtenerImpares($numero){
+  $impar = array();
+  for ($i = 1; $i <= $numero; $i++){
+      if ($i % 2 != 0) {
+          $impar[] = $i;
+      }
+  }
+  return $impar;   
+}
+$misImpares = obtenerImpares(50);
+var_dump($misImpares);
 
 ?>
 
