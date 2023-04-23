@@ -109,9 +109,6 @@ foreach ($impares as $numero) {
   echo $numero . " ";
 }
 
-
-
-
 ?>
 
 
