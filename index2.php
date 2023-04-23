@@ -1,5 +1,7 @@
 <?php
 
+//11. Considerando las funciones de antes (pares e impares), crear una función que tenga como limite un numero dado n y como segundo parámetro un valor booleano que: si es true imprime los pares y si es false imprime los impares.
+
 function obtenerPares($numero) {
     $pares = array();
     for ($i = 1; $i <= $numero; $i++) {
